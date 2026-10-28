@@ -44,5 +44,6 @@ jobs:
           only-severities: critical
           only-fixed: true
           exit-code: true
+          summary: true
       - name: Push su Docker Hub
         run: docker push --all-tags "$IMAGE"
